@@ -16,22 +16,22 @@ The clone implements TTL using Heaps and removes expired entries to clear out me
 
 # Usage
 
-The server can be found in the server.cpp file.
+The server can be found in the `server.cpp` file.
 
 You can either write your own testing client, or use the one available in client.cpp
 
 The server exposes various commands offered by the actual Redis project. These are:
 
-- **get (key)** : Fetch entry with key (key)
-- **set (key, value)** : Set entry with key as (key) and value as (value)
-- **del (key)** : Delete entry with key (key)
-- **pexpire (key, timeout_time)** : Set timeout of entry with key (key) to (timeout_time)
-- **pttl (key)** : Fetch TTL for entry with key (key)
-- **keys** : Returns every key in the store
-- **zadd (set, score, value)** : Adds value (value) with score (score) to sorted set (set)
-- **zrem (set, value)** : Removes value (value) from sorted set (set)
-- **zscore (set, value)** : Returns score of value (value) in set (set)
-- **zquery (set, score, value, offset, limit)** : Find the first entry in zset (set) with score and value (score, value), offset by (offset), and return the (limit) entries thereafter.
+- **`get (key)`** : Fetch entry with key (key)
+- **`set (key, value)`** : Set entry with key as (key) and value as (value)
+- **`del (key)`** : Delete entry with key (key)
+- **`pexpire (key, timeout_time)`** : Set timeout of entry with key (key) to (timeout_time)
+- **`pttl (key)`** : Fetch TTL for entry with key (key)
+- **`keys`** : Returns every key in the store
+- **`zadd (set, score, value)`** : Adds value (value) with score (score) to sorted set (set)
+- **`zrem (set, value)`** : Removes value (value) from sorted set (set)
+- **`zscore (set, value)`** : Returns score of value (value) in set (set)
+- **`zquery (set, score, value, offset, limit)`** : Find the first entry in zset (set) with score and value (score, value), offset by (offset), and return the (limit) entries thereafter.
 
 
 
