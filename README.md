@@ -31,5 +31,7 @@ The server exposes various commands offered by the actual Redis project. These a
 - zadd (set, score, value) : Adds value (value) with score (score) to sorted set (set)
 - zrem (set, value) : Removes value (value) from sorted set (set)
 - zscore (set, value) : Returns score of value (value) in set (set)
-- zquery (set, score, value, offset, limit) : 
+- zquery (set, score, value, offset, limit) : Find the first entry in zset (set) with score and value (score, value), offset by (offset), and return the (limit) entries thereafter.
+
+
 
